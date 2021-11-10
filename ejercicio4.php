@@ -17,11 +17,11 @@
         <tr>
             <td>session.use_cookies</td>
             <td>Especifica si el módulo usará cookies para almacenar el id de sesión en la parte del cliente. Por defecto es 1 (habilitado)</td>
-            <td>1(true) ó 0(false)</td>
+            <td>1(habilitado) ó 0(deshabilitado)</td>
         <tr>
             <td>session.use_only_cookies</td>
             <td>especifica si el módulo sólo usará cookies para almacenar el id de sesión en la parte del cliente. Habilitar este ajuste previene ataques que implican pasar el id de sesión en la URL. Por defecto es 1 (habilitado).</td>
-            <td>1(true) ó 0(false)</td>
+            <td>1(habilitado) ó 0(deshabilitado)</td>
         </tr>
         <tr>
             <td>ssession.save_handler</td>
@@ -36,7 +36,7 @@
         <tr>
             <td>session.auto_start</td>
             <td>especifica si el módulo de sesión inicia una sesión automáticamente cuando arranque una petición. Por defecto es 0 (deshabilitado).</td>
-            <td>0(false) ó 1(true)</td>
+            <td>1(habilitado) ó 0(deshabilitado)</td>
         </tr>
         <tr>
             <td>session.cookie_lifetime</td>
