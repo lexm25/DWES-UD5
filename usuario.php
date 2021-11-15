@@ -17,9 +17,10 @@
     }
     else if($_SESSION["perfil"] == "admin"){
         echo "<h1 style='color:green'>Eres el jefe supremo, ¿no quieres ir a tu página?<h1>";
-        echo "<br>";
-        echo "<a href='admin.php'>pulsa aquí maki</a>";
+        echo "<button onclick=location.href='admin.php'>PULSA AQUÍ PARA IR A ADMIN.PHP</button>";
     }
+    echo "<br>";
+    echo "<button onclick=location.href='cierraSesion.php'>CERRAR SESIÓN</button>";
     ?>
 </body>
 </html>

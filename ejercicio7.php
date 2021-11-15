@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <?php
     include "ejercicio6BBDD.php";
+
+    session_start();
 
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             $usuario = $_POST["usuario"];
@@ -23,7 +25,7 @@
             $contrasenya = htmlspecialchars($contrasenya);
 
             $datos = getUser($usuario);
-            session_start();
+            
             $_SESSION["perfil"] = $datos["perfil"];
 
             if($datos){
@@ -36,7 +38,7 @@
                     header("Location: usuario.php");
                 }
                 else if($validar && $_SESSION["perfil"]==""){
-                    header("Location: ejercicio6.php");
+                    header("Location: ejercicio7.php");
                 }
             }
             else{

@@ -13,12 +13,13 @@
             echo "<h1 style='color:green'>Eres el jefe supremo<h1>";
         }
         else if($_SESSION["perfil"]==""){
-            header("Location: ejercicio6.php");
+            header("Location: ejercicio7.php");
         }
         else if($_SESSION["perfil"] == "usuario"){
             header("Location: usuario.php");
         }
 
+        echo "<button onclick=location.href='cierraSesion.php'>CERRAR SESIÓN</button>";
     ?>
 </body>
 </html>
